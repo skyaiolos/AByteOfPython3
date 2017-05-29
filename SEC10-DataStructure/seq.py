@@ -6,12 +6,12 @@ name = 'swaroop'
 
 # Indexing or 'Subscription' operation
 print(f'shop list is {shop_list}')
-print('- Item 0 is', shop_list[0])
-print('- Item 1 is', shop_list[1])
-print('- Item 2 is', shop_list[2])
-print('- Item 3 is', shop_list[3])
-print('- Item -1 is', shop_list[-1])
-print('- Item -2 is', shop_list[-2])
+print(' - Item 0 is', shop_list[0])
+print(' - Item 1 is', shop_list[1])
+print(' - Item 2 is', shop_list[2])
+print(' - Item 3 is', shop_list[3])
+print(' - Item -1 is', shop_list[-1])
+print(' - Item -2 is', shop_list[-2])
 
 print(f'name is :{name}')
 print('- Character 0 is', name[0])

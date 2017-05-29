@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Filename: reference.py
 
-print('Simple Assignment :'.center(30, '-'))
+print('Simple Assignment :'.center(40, '-'))
 shop_list = ['apple', 'mango', 'carrot', 'banana']
 my_list = shop_list  # mylist is just another name pointing to the same object!
 print('shop list is', shop_list)

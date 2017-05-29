@@ -23,4 +23,4 @@ print('\nThe first item I will buy is: ', shop_list[0])
 del_item = shop_list[0]
 del shop_list[0]
 print('No need to bug the', del_item)
-print('My shopping list is now', shop_list)
+print('My shopping list is now:', shop_list)
