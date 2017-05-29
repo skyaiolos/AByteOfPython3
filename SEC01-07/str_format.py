@@ -2,6 +2,6 @@
 # Filename: str_format.py
 age = 25
 name = 'Swaroop'
-print('{0} is {1} years old'.format(name, age))
-print('Why is {0} playing with that python?'.format(name))
+print(f'{name} is {age} years old')
+print(f'Why is {name} playing with that python?')
 input()
