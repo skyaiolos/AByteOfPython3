@@ -10,20 +10,20 @@ class Robot:
     def __init__(self,name):
         '''Initializes the data.'''
         self.name = name
-        print('(Initialize {0})'.format(self.name))
+        print(f'(Initialize {self.name})')
 
         #When this person is created, the robot
         # adds to the population
         Robot.population += 1
 
     def __del__(self):
-        '''I am dying.'''
-        print('{0} is being destroyed!'.format(self.name))
+        '''I am del'''
+        print(f'{self.name} is being destroyed!')
 
         Robot.population -= 1
 
         if Robot.population == 0:
-            print('{0} was the last one.'.format(self.name))
+            print(f'{self.name} was the last one.')
         else:
             print('There are still {0:d} robots working.'.format(Robot.population))
 
@@ -31,7 +31,7 @@ class Robot:
         '''Greeting by the robot.
 
         Yeah, they can do that.'''
-        print('Greetings, my master call me {0}.'.format(self.name))
+        print(f'Greetings, my master call me {self.name}.')
         
     def howMany():
         '''Prints the current population.'''
