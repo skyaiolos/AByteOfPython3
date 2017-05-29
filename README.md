@@ -1,7 +1,7 @@
 # A Byte of Python
 ## SEC01~SEC07 Python Basic Skill
 ## SEC08 Func
-## SC09 Module
+## SEC09 Module
 ## SEC10 Data Struction
 ## SEC11 Solve Problem
 ## SEC12 OOP
