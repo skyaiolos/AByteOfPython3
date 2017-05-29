@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # Filename: mymodule_demo2.py
 
-from mymodule import sayhi, __version__
+from sec09_Module.my_module import say_hi, __version__
 
-sayhi()
+say_hi()
 print('Version', __version__)
 input()
