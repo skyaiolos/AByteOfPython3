@@ -1,19 +1,19 @@
-#windows
+# windows
 
 'readTextFile.py -- read and display text file'
 
-#get filename
-fname = raw_input("Enter filename:")
-print
+# get filename
+fname = input("Enter filename:")
+print()
 
-#attempt to open file for reading
+# attempt to open file for reading
 try:
-    fobj = open(fname,'r')
-except IOError, e:
-    print "*** file open error:", e
-#display contents to the screen
+    fobj = open(fname, 'r')
+except IOError as e:
+    print("*** file open error:", e)
+# display contents to the screen
 for eachLine in fobj:
-    print eachLine,
+    print(eachLine, )
 fobj.close()
-print
-raw_input("Press Enter to Continue !")
+print()
+input("Press Enter to Continue !")
