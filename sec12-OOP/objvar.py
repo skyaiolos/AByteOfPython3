@@ -4,15 +4,15 @@
 class Robot:
     '''Represents a robot, with a name.'''
 
-    #A class variable, counting the number of robots
+    # A class variable, counting the number of robots
     population = 0
 
-    def __init__(self,name):
+    def __init__(self, name):
         '''Initializes the data.'''
         self.name = name
         print(f'(Initialize {self.name})')
 
-        #When this person is created, the robot
+        # When this person is created, the robot
         # adds to the population
         Robot.population += 1
 
@@ -32,11 +32,13 @@ class Robot:
 
         Yeah, they can do that.'''
         print(f'Greetings, my master call me {self.name}.')
-        
+
     def howMany():
         '''Prints the current population.'''
         print('We have {0:d} robots.'.format(Robot.population))
+
     howMany = staticmethod(howMany)
+
 
 def main():
     droid1 = Robot('R2-D2')
@@ -56,28 +58,8 @@ def main():
 
     Robot.howMany()
 
+
 if __name__ == '__main__':
     main()
 else:
     print("objvar.py was imported!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
