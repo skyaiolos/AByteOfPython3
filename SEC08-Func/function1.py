@@ -1,6 +1,8 @@
 def sayHello():
     print('Hello World!')
+
+
 sayHello()
 sayHello()
-s = raw_input()
-print (s)
+s = input("please input the string : ")
+print(s)

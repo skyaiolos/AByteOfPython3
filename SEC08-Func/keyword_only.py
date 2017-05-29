@@ -8,7 +8,8 @@ def total(initial=5, *numbers, vegetables):
     count += vegetables
     return count
 
-print(total(10, 1, 2, 3, vegetables=50))
-print(total(10, 1, 2, 3,))
-# Raises error because we have not supplied a default argument value for 'vegetables'
 
+print(total(3, 222, vegetables=4))
+print(total(10, 1, 2, 3, vegetables=50))
+print(total(10, 1, 2, 3, ))
+# Raises error because we have not supplied a default argument value for 'vegetables'
