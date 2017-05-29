@@ -2,25 +2,25 @@
 # Filename: using_list.py
 
 # This is my shopping list
-shoplist = ['apple', 'mango', 'carrot', 'banana']
+shop_list = ['apple', 'mango', 'carrot', 'banana']
 
-print('I have', len(shoplist), 'items to purchase.')
+print('I have', len(shop_list), 'items to purchase.')
 
-print('These items are:', end=' ')
+print('These items are: ', end=' ')
 
-for item in shoplist:
-    print(item, end=' ')
+for item in shop_list:
+    print(item, end=', ')
 
-print('\nI also have to buy rice.')
-shoplist.append('rice')
-print('My shopping list is now', shoplist)
+print('\n\nI also have to buy rice.')
+shop_list.append('rice')
+print('My shopping list is now', shop_list)
 
-print('I will sort my list now')
-shoplist.sort()
-print('Sorted shopping list is', shoplist)
-print('The first item I will buy is', shoplist[0])
-olditem = shoplist[0]
-del shoplist[0]
-print('I bought the', olditem)
-print('My shopping list is now', shoplist)
-input()
+print('\nI will sort my list now')
+shop_list.sort()
+print('Sorted shopping list is: ', shop_list)
+
+print('\nThe first item I will buy is: ', shop_list[0])
+del_item = shop_list[0]
+del shop_list[0]
+print('No need to bug the', del_item)
+print('My shopping list is now', shop_list)

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Filename: str_methods.py
 
-name = 'Swaroop' # This is a string object
+name = 'Swaroop'  # This is a string object
 
 if name.startswith('Swa'):
     print('Yes, the string starts with "Swa"')
@@ -13,7 +13,18 @@ if name.find('war') != -1:
     print('Yes, it contains the string "war"')
 
 delimiter = '_*_'
-mylist = ['Brazil', 'Russia', 'India', 'China']
-print(delimiter.join(mylist))
+my_list = ['Brazil', 'Russia', 'India', 'China']
 
-input()
+try:
+    print(my_list.join(delimiter))
+
+except AttributeError as e:
+    print("AttributeError : ", e)
+
+# try:
+#     print(my_list.join(delimiter))
+#
+# except AttributeError as e:
+#     raise e
+
+# AttributeError: 'list' object has no attribute 'join'
