@@ -6,4 +6,3 @@ if os.system(del_command)==0:
 else:
     print("Deleting files failed!")
 
-input("Press Enter to continue!")

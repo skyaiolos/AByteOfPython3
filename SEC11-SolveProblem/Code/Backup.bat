@@ -1,0 +1,1 @@
+"%ProgramFiles(X86)%\WinRAR\RAR.exe" .\backup\20170528.zip .\tmp
