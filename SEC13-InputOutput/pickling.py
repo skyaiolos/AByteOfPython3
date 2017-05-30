@@ -4,25 +4,25 @@
 import pickle
 
 # the name of the file where we will store the object
-shoplistfile = 'shoplist.data'
+shop_list_file = 'shoplist.data'
 # the list of things to buy
-shoplist = ['apple','mango','carrot']
-shoplist1= ['name','age','sex']
+shop_list = ['apple', 'mango', 'carrot']
+shop_list1 = ['name', 'age', 'sex']
 
 # Write to the file
-f = open(shoplistfile,'wb')
-pickle.dump(shoplist, f) #dump the object to a file
-pickle.dump(shoplist1,f)
+f = open(shop_list_file, 'wb')
+pickle.dump(shop_list, f)  # dump the object to a file
+pickle.dump(shop_list1, f)
 f.close()
 
-del shoplist # detroy the shoplist variable
-del shoplist1
+del shop_list  # detroy the shoplist variable
+del shop_list1
 
 # Read back from the storage
-with open(shoplistfile,'rb') as f:
-	while True:
-		try:
-			storedlist  = pickle.load(f) # load the object from the file
-		except EOFError:
-			break
-		print(storedlist)
+with open(shop_list_file, 'rb') as f:
+    while True:
+        try:
+            stored_list = pickle.load(f)  # load the object from the file
+        except EOFError:
+            break
+        print(stored_list)
