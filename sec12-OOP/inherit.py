@@ -37,7 +37,7 @@ class SchoolMember:
         self.age = age
         print(f'(Initialize SchoolMember:{self.name})')
 
-    def tell(self):
+    def get_info(self):  # func named ,动词_名词
         '''Tell my details.'''
         print(f'Name:"{self.name}" Age:"{self.age}"')
 
@@ -50,8 +50,8 @@ class Teacher(SchoolMember):
         self.salary = salary
         print(f'(Initialized Teacher:{self.name})')
 
-    def tell(self):
-        SchoolMember.tell(self)
+    def get_info(self):
+        SchoolMember.get_info(self)
         print('Salary:"{0:d}"'.format(self.salary))
 
 
@@ -63,8 +63,8 @@ class Student(SchoolMember):
         self.marks = marks
         print(f'(Initialized Student:{self.name})')
 
-    def tell(self):
-        SchoolMember.tell(self)
+    def get_info(self):
+        SchoolMember.get_info(self)
         print('Marks:"{0:d}"'.format(self.marks))
 
 
@@ -76,7 +76,7 @@ def main():
 
     members = [t, s]
     for member in members:
-        member.tell()  # work for both Teacher and Students
+        member.get_info()  # work for both Teacher and Students
 
 
 if __name__ == '__main__':
